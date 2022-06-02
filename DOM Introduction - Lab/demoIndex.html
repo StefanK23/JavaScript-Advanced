@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+
+<body>
+    <h1 id='title'>DOM introduction</h1>
+    <ul>
+        <li> Dom Methods Example </li>
+        <li>Dom Properties Example</li>
+    </ul>
+
+    <script>
+        function edit(elememt, matcher, replacer) {
+            const text = elememt.textContent;
+            const matcher = new RegExp(matcher, replacer);
+            elememt.textContent = text.replace(matcher, replacer);
+
+        }
+    </script>
+
+
+</body>
+
+</html>
